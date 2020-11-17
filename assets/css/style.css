@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+:root {
+    --main-color: #db7a9a;
+    --second-color: #e4eace;
+}
+
+body {
+    background: var(--second-color);
+    
+}
+
+#headline {
+    color: var(--main-color);
+    font-family: 'Lobster', cursive;
+    letter-spacing: .1rem;
+    text-align: center;
+    font-size: 4rem;
+    margin: 0 0 2rem 0;
+    padding: 0;
+    cursor: pointer;
+    transition: opacity .6s ease;
+}
+
+#headline:hover {
+    opacity: .8;
+}
+
+#jokeOutput {
+    font-family: sans-serif;
+    text-align: center;
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+#fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #e4eacecf;
+}
+
+.grid {
+    width: 90%;
+    margin: 13% auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto, 20vw);
+    gap: 2rem;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    justify-content: space-evenly;
+}
+
+button {
+    padding: 10%;
+    margin: 2rem 0 2rem 0;
+    border: none;
+    background: var(--main-color);
+    color: var(--second-color);
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    font-family: 'Lobster', cursive;
+    letter-spacing: .1rem;
+    transition: background .6s ease;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    background: #af627b;
+}
+
+button:active {
+    box-shadow: inset 0px 0px 10px #83495c;
+}
+
+#jokes{
+    text-align: center;
+}
+
+#jokes h4{
+    margin: 0 0 4rem 0;
+}
